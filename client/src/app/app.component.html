@@ -1,0 +1,21 @@
+<p>
+  Name : <input [(ngModel)]="user.name">
+</p>
+
+<p>
+  Age : <input [(ngModel)]="user.age">
+</p>
+
+<p>
+  <button (click)="saveUser()">Save</button>
+</p>
+
+<hr>
+
+<table>
+  <th>Name</th><th>Age</th>
+  <tr *ngFor="let x of users">
+    <td>{{x.name}}</td>
+    <td>{{x.age}}</td>
+  </tr>
+</table>
